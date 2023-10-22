@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE MOVIES</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ONLINE MOVIES</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collection.html">COLLECTION</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Featured Movies Carousel -->
+        <div id="featuredMoviesCarousel" class="carousel slide my-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Movie 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Movie 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Movie 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredMoviesCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredMoviesCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Movie Genres Section -->
+        <div class="row my-4">
+            <div class="col-md-3">
+                <h2>Action</h2>
+                <!-- Action Movie Cards Here -->
+            </div>
+            <div class="col-md-3">
+                <h2>Comedy</h2>
+                <!-- Comedy Movie Cards Here -->
+            </div>
+            <div class="col-md-3">
+                <h2>Drama</h2>
+                <!-- Drama Movie Cards Here -->
+            </div>
+            <div class="col-md-3">
+                <h2>Sci-Fi</h2>
+                <!-- Sci-Fi Movie Cards Here -->
+            </div>
+        </div>
+
+        <h2 class="my-4">Your Cart</h2>
+        <div class="container" id="cart"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

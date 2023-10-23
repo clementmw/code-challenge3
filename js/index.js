@@ -63,3 +63,6 @@ function tickets(item) {
         alert("Sorry, tickets are sold out!");
     }
 }
+
+
+// the button issnot working as it should maybe you could provide insight//
